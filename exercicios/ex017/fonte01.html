@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: "Arial, Helvetica, sans-serif";
+            /*
+            Medidas absolutas
+            cm, mm, in(polegada), px, pt(ponto), pc(paica)
+
+            Medidas Relativas
+            em(relativo ao tamanho atual da fonte), ex(relativo a altura x de uma fonte), rem(relativo a fonte que está configurada no body(root)), vw(relativo a largura da tela), vh(relativo a altura da tela), %(porcentagem).
+
+            OBS: A mais utilizada é o "em".
+                 A W3C recomenda o uso apenas do "px" e do "em"
+            16px geralmente = 1em
+            */
+            font-size: 1em;
+        }
+
+        h1 {
+            /*  
+            font-style: italic; *TEXTO ITÁLICO*
+            font-weight: bolder; *TEXTO EM NEGRITO OU OUTRO PESO **Peso da fonte: lighter normal bold bolder | ou númerico entre 100-900*
+            font-size: 3em;        
+            font-family: Arial, Helvetica, sans-serif;
+            *text-decoration: underline; *deixar o TEXTO SUBLINHADO *           
+            */
+
+            /* SHORTHAND FONT 
+            
+            font-style -> font-weight -> font-size -> font-family*/
+            font: italic bolder 3em "Arial, Helvetica, sans-serif";   
+        }
+
+        h2 {
+            font: bolder 2em "Arial, Helvetica, sans-serif";
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus molestiae aspernatur doloribus nam accusamus dolor eum unde voluptates consequuntur corrupti voluptate expedita atque optio, temporibus, quam omnis autem dolores excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nam est incidunt consectetur aperiam placeat, quos, rem quam eius officiis qui, cumque maxime dignissimos? Dignissimos natus iusto repudiandae quisquam minus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore enim ea mollitia amet earum in tenetur commodi minus nostrum id unde facere excepturi recusandae perferendis debitis, voluptatem modi totam possimus.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, neque! Optio debitis vitae blanditiis eveniet ab numquam, nemo nam ad odit, perspiciatis eum non sed ipsum quo autem eligendi asperiores. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo repellendus doloribus ad! Harum, ex saepe cum recusandae aliquam quod est magnam rerum, corrupti reprehenderit corporis delectus sapiente vero quos. Maxime.</p>
+</body>
+</html>
